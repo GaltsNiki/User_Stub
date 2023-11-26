@@ -7,10 +7,14 @@ public class User {
     private String password;
     private LocalDate localDate;
 
-    /*   public User(String login, String password){
+    public User(){
+
+    }
+
+      public User(String login, String password){
         this.login = login;
         this.password = password;
-    } */
+    }
 
     public User(String login, String password, LocalDate localDate){
         this.login = login;

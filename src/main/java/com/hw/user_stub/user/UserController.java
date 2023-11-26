@@ -1,7 +1,6 @@
 package com.hw.user_stub.user;
 
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.web.bind.annotation.*;
@@ -15,7 +14,7 @@ public class UserController {
     @GetMapping
     public ResponseEntity<?> getUser(){
 
-        User newUser = new User("Nikita", "V4", null);
+        User newUser = new User("Nikita", "V4");
         return new ResponseEntity<>(newUser, HttpStatus.OK);
 
     }
